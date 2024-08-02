@@ -6,15 +6,14 @@
 // callbacks[3](); // must return 3
 // We already implemented that function, but when we actually run the code, the result doesn't look like what we expected. Can you spot, what's wrong with it? A test fixture is also available
 
-
 function createFunctions(n) {
   var callbacks = [];
 
-  for (var i=0; i<n; i++) {
-    callbacks.push(function() {
+  for (var i = 0; i < n; i++) {
+    callbacks.push(function () {
       return i;
     });
   }
-  
+
   return callbacks;
 }
